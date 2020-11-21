@@ -3,7 +3,7 @@
 
 using namespace std;
 
-double activationFunction( double neuronValue ) {
+double neuronActivationFunction( double neuronValue ) {
 	double E = std::exp(1.0);
 	double negNeuronValue = neuronValue * -1;
 	cout << "u: " << neuronValue << endl;
@@ -24,9 +24,9 @@ int main() {
 
 
 	// Activation Function, any function with contraints
-	const double activationFunctionValue = activationFunction( neuron );
+	const double activationValue = neuronActivationFunction( neuron );
 
-	cout << "ActivationFunctionValue: " << activationFunctionValue << endl;
+	cout << "ActivationValue: " << activationValue << endl;
 
 
 	return 0;
