@@ -8,6 +8,7 @@
 using namespace std;
 
 class Node {
+	// Notes: In some sources, nodes are called perceptrons
 	private:
 	// If we need to store them
 	// multimap<double, double> inputWeights;
